@@ -2,7 +2,7 @@ import React from 'react';
 import Story from './Story';
 
 const Stories = ({ stories }) =>
-  <div className=''>
+  <div className='stories'>
     {(stories || []).map(story =>
       <Story key={story.objectID} story={story} />
     )}

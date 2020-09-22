@@ -10,7 +10,7 @@ const Story = ({ story }) => {
   } = story;
 
   return (
-    <div className=''>
+    <div className='story'>
       <span>
         <a href={url}>{title}</a>
       </span>

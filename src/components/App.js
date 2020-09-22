@@ -5,7 +5,7 @@ const App = ({
   stories
 }) => {
   return (
-    <div className=''>
+    <div className='app'>
       App
       <Stories stories={stories} />
     </div>
