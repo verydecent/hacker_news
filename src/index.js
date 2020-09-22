@@ -4,12 +4,14 @@ import './index.css';
 import App from './components/App.js';
 import store from './store';
 
-const stories = store.getState();
+const state = store.getState();
+
+console.log('state', state);
 
 ReactDOM.render(
   <React.StrictMode>
     <App
-      stories={stories}
+      stories={state.storyState}
       onArchive={() => { }}
     />
   </React.StrictMode>,
