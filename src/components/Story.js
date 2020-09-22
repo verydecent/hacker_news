@@ -2,7 +2,7 @@ import React from 'react';
 import './Story.css';
 import ButtonInline from './Button';
 
-const Story = ({ story, columns }) => {
+const Story = ({ story, columns, onArchive }) => {
   const {
     title,
     url,
@@ -10,9 +10,7 @@ const Story = ({ story, columns }) => {
     num_comments,
     points,
     objectID,
-    onArchive
   } = story;
-
   return (
     <div className='story'>
       <span style={{ width: columns.title.width }}>
