@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App.js';
+import store from './store';
 
 const stories = [
   {
@@ -21,10 +22,13 @@ const stories = [
   },
 ];
 
+const storiesData = store.getState();
+
 ReactDOM.render(
   <React.StrictMode>
     <App
-      stories={stories}
+      // stories={stories}
+      stories={storiesData}
       onArchive={() => { }}
     />
   </React.StrictMode>,
