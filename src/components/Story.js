@@ -7,7 +7,9 @@ const Story = ({ story, columns }) => {
     url,
     author,
     num_comments,
-    points
+    points,
+    objectID,
+    onArchive
   } = story;
 
   return (
@@ -23,6 +25,15 @@ const Story = ({ story, columns }) => {
       </span>
       <span style={{ width: columns.title.width }}>
         {points}
+      </span>
+      <span style={{ width: columns.title.width }}>
+        <button
+          type='button'
+          className='button-inline'
+          onClick={() => onArchive(objectID)}
+        >
+          Archive
+        </button>
       </span>
     </div>
   );

@@ -3,11 +3,15 @@ import Stories from './Stories';
 import './App.css';
 
 const App = ({
-  stories
+  stories,
+  onArchive
 }) => {
   return (
     <div className='app'>
-      <Stories stories={stories} />
+      <Stories
+        stories={stories}
+        onArchive={onArchive}
+      />
     </div>
   );
 }
