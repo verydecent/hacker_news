@@ -1,21 +1,6 @@
 import React from 'react';
 import './Story.css';
-
-const ButtonInline = ({
-  onClick,
-  type = 'button',
-  children
-}) => {
-  return (
-    <button
-      type={type}
-      className='button-inline'
-      onClick={onClick}
-    >
-      {children}
-    </button>
-  );
-}
+import ButtonInline from './Button';
 
 const Story = ({ story, columns }) => {
   const {
