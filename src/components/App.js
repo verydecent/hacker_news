@@ -1,12 +1,12 @@
 import React from 'react';
 import Stories from './Stories';
+import './App.css';
 
 const App = ({
   stories
 }) => {
   return (
     <div className='app'>
-      App
       <Stories stories={stories} />
     </div>
   );

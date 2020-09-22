@@ -1,5 +1,6 @@
 import React from 'react';
 import Story from './Story';
+import './Stories.css';
 
 const Stories = ({ stories }) =>
   <div className='stories'>
