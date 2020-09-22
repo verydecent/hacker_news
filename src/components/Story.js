@@ -1,7 +1,7 @@
 import React from 'react';
 import './Story.css';
 
-const Story = ({ story }) => {
+const Story = ({ story, columns }) => {
   const {
     title,
     url,
@@ -12,12 +12,18 @@ const Story = ({ story }) => {
 
   return (
     <div className='story'>
-      <span>
+      <span style={{ width: columns.title.width }}>
         <a href={url}>{title}</a>
       </span>
-      <span>{author}</span>
-      <span>{num_comments}</span>
-      <span>{points}</span>
+      <span style={{ width: columns.title.width }}>
+        {author}
+      </span>
+      <span style={{ width: columns.title.width }}>
+        {num_comments}
+      </span>
+      <span style={{ width: columns.title.width }}>
+        {points}
+      </span>
     </div>
   );
 }
