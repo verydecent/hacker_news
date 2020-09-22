@@ -1,6 +1,22 @@
 import React from 'react';
 import './Story.css';
 
+const ButtonInline = ({
+  onClick,
+  type = 'button',
+  children
+}) => {
+  return (
+    <button
+      type={type}
+      className='button-inline'
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  );
+}
+
 const Story = ({ story, columns }) => {
   const {
     title,
@@ -27,13 +43,9 @@ const Story = ({ story, columns }) => {
         {points}
       </span>
       <span style={{ width: columns.title.width }}>
-        <button
-          type='button'
-          className='button-inline'
-          onClick={() => onArchive(objectID)}
-        >
+        <ButtonInline onClick={() => onArchive(objectID)} >
           Archive
-        </button>
+        </ButtonInline>
       </span>
     </div>
   );
