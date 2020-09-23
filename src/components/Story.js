@@ -33,4 +33,5 @@ const Story = ({ story, columns, onArchive }) => {
     </div>
   );
 }
+
 export default Story;
