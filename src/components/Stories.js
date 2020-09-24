@@ -6,7 +6,7 @@ import { doArchiveStory } from '../actions/archive';
 import { getReadableStories } from '../selectors/story';
 
 const mapStateToProps = state => ({
-  stoies: getReadableStories(state)
+  stories: getReadableStories(state)
 });
 
 const mapDispatchToProps = dispatch => ({
