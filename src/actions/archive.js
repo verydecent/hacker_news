@@ -1,4 +1,4 @@
-import { STORY_ARCHIVE } from '../constants/actionTypes';
+import { STORY_ARCHIVE } from '../constants/actionsTypes';
 
 const doArchiveStory = id => ({
   type: STORY_ARCHIVE,
