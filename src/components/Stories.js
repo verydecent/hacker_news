@@ -3,7 +3,6 @@ import Story from './Story';
 import './Stories.css';
 import { connect } from 'react-redux';
 import { getReadableStories } from '../selectors/story';
-import { doArchiveStory } from '../actions/archive';
 
 const mapStateToProps = state => ({
   stories: getReadableStories(state)

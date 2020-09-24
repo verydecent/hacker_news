@@ -40,4 +40,4 @@ const Story = ({ story, columns, onArchive }) => {
   );
 }
 
-export default connect(mapDispatchToProps)(Story);
+export default connect(null, mapDispatchToProps)(Story);
